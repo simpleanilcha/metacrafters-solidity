@@ -7,7 +7,7 @@ contract SetGetVariables {
     bool public isDeveloper = false;
     int public temp = -3;
 
-    // takes a value _number and assigns it to the state variable number
+    // takes a values and assigns it to the state variables
     function setVariables(int _temp, uint _age, bool _isDeveloper, string memory _name) public {
         temp = _temp;
         age = _age;
@@ -15,7 +15,7 @@ contract SetGetVariables {
         name = _name;
     }
 
-    // returns the value of the state variable number
+    // returns the values of the state variables
     function getVariables() public view returns (int, uint, bool, string memory) {
         return (temp, age, isDeveloper, name);
     }
