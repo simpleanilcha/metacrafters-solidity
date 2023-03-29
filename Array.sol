@@ -7,14 +7,14 @@ contract Array {
 
   function examples() external {
     nums.push(4);               // insert/push as last element [1, 2, 3, 4]
-    uint x = nums[1];           // get i.e 2
+    // uint x = nums[1];           // get i.e 2
     nums[2] = 777;              // update [1, 2, 777, 4]
     delete nums[1];             // delete and stores default value i.e 0 -> [1, 0, 777, 4]
     nums.pop();                 // remove the last element i.e. [1, 0, 777]
-    uint len = nums.length;     // array length i.e 3
+    // uint len = nums.length;     // array length i.e 3
 
     // Creating array in memory
-    uint[] memory a = new uint[](5);    // it will be fixed size array so can't push/pop, can get/update/delete
+    // uint[] memory a = new uint[](5);    // it will be fixed size array so can't push/pop, can get/update/delete
   }
 
   // Returning array from function
